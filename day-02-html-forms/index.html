@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Practice</title>
+</head>
+
+<body>
+    <h1>HTML Forms Practice</h1>
+    <h2>Contact Form</h2>
+    <form action="#" method="post">
+        <label for="fullName">Full Name: </label>
+        <input type="text" minlength="2" maxlength="50" id="fullName" required><br>
+        <label for="email">Email Address: </label>
+        <input type="email" id="email" required><br>
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" placeholder="03XX-XXXXXXX" pattern="[0-9]{4}-[0-9]{7}" id="phoneNumber"><br>
+        <label for="subject">Subject: </label>
+        <input type="text" maxlength="100" id="subject" required><br>
+        <label for="message">Message: </label>
+        <textarea name="message" id="message" required minlength="20" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Send Message">
+    </form>
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" id="firstName" required maxlength="30"><br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" id="lastName" required maxlength="30"><br>
+        <label for="email">Email Address:</label>
+        <input type="email" required id="email" name="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" required minlength="8" id="password" name="password"><br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" required minlength="8" id="confirmPassword" name="confirmPassword"><br>
+        <label for="age">Age:</label>
+        <input type="number" required min="16" max="60" id="age" name="age"><br>
+        <label for="gender">Select Gender:</label>
+        <select name="gender" id="gender" required>
+            <option value="selectGender" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        <label for="dateOFBirth">Date of Birth:</label>
+        <input type="date" name="dateOFBirth" id="dateOFBirth" required><br>
+        <label for="profilePicture">Profile Picture</label>
+        <input type="file" accept="image/png, image/jpeg, image/gif" name="profilePicture" id="profilePicture" required><br>
+        <label for="skills">Your Skills:</label><br>
+        <input type="checkbox" id="html" name="html" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="css" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="js" value="js">
+        <label for="js">JavaScript</label><br>
+        <input type="checkbox" id="python" name="python" value="python">
+        <label for="python">Python</label><br>
+        <label for="experience">Experience Level</label><br>
+        <input type="radio" id="beginner" name="experience" value="beginner">
+        <label for="experience">Beginner</label><br>
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="experience">Intermediate</label><br>
+        <input type="radio" id="advance" name="experience" value="advance">
+        <label for="experience">Advance</label><br>
+        <label for="shortBio">Short Bio</label>
+        <textarea name="shortBio" id="shortBio" maxlength="300" rows="3" ></textarea><br>
+        <input type="checkbox" id="terms" name="terms" value="terms">
+        <label for="terms">I agree to the Terms and Conditions</label><br>
+        <input type="submit" value="Create Account">
+    </form>
+</body>
+
+</html>
