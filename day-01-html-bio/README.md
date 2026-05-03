@@ -20,7 +20,9 @@ No CSS, no JavaScript — just clean, meaningful HTML structure.
 `<h1>` `<h2>` `<h3>` `<p>` `<ul>` `<li>` `<a>` `<strong>` `<small>` `<address>`
 
 ## Screenshot
-*(Add a screenshot of your page here tomorrow after Day 2 styling!)*
+![Bio page header and navigation](image.png)
+![Bio page about and skills sections](image-1.png)
+![Bio page about and skills sections](image-2.png)
 
 ## Next
 Day 02 — HTML Forms: contact form + registration form
